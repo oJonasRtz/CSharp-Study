@@ -1,0 +1,14 @@
+/home/jonas/CSharp-Study/hello/bin/Debug/net8.0/hello
+/home/jonas/CSharp-Study/hello/bin/Debug/net8.0/hello.deps.json
+/home/jonas/CSharp-Study/hello/bin/Debug/net8.0/hello.runtimeconfig.json
+/home/jonas/CSharp-Study/hello/bin/Debug/net8.0/hello.dll
+/home/jonas/CSharp-Study/hello/bin/Debug/net8.0/hello.pdb
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.GeneratedMSBuildEditorConfig.editorconfig
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.AssemblyInfoInputs.cache
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.AssemblyInfo.cs
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.csproj.CoreCompileInputs.cache
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.dll
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/refint/hello.dll
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.pdb
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.genruntimeconfig.cache
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/ref/hello.dll
