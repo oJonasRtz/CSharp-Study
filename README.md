@@ -1,7 +1,9 @@
-# Some dotnet commands
+<h3 align="center">💻 Some dotnet commands</h3>
 
-"-n" Set name
+---
+
 `dotnet <command> -n Name`
+{"-n" Add a name to the command}
 
 `dotnet new console -n ProjectName`
 {Create a new project}
