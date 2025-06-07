@@ -2,44 +2,65 @@
 
 static class Calculator
 {
+	#region Variables
 	private static double n1;
 	private static double n2;
-	
-	private static void	SetColour() {Console.ForegroundColor = ConsoleColor.Yellow;}
-	public static void GetInput()
+	#endregion
+
+	#region Private functions
+	private static void SetColour()
 	{
-		string? input = null;
-
-		do
-		{
-			SetColour();
-			Console.Write("Enter first number: ");
-			Console.ResetColor();
-			input = Console.ReadLine();
-		} while (string.IsNullOrEmpty(input) || !double.TryParse(input, out n1));
-
-		do
-		{
-			SetColour();
-			Console.Write("Enter second number: ");
-			Console.ResetColor();
-			input = Console.ReadLine();
-		} while (string.IsNullOrEmpty(input) || !double.TryParse(input, out n2));
+		Console.ForegroundColor = ConsoleColor.Yellow;
 	}
 
+	private static double ReadNumber(string prompt)
+	{
+		string? input = null;
+		double result;
+
+		do
+		{
+			SetColour();
+			Console.Write($"{prompt}: ");
+			Console.ResetColor();
+			input = Console.ReadLine();
+		} while (string.IsNullOrEmpty(input) || !double.TryParse(input, out result));
+
+		return (result);
+	}
 	private static double Sum() { return (n1 + n2); }
 	private static double Sub() { return (n1 - n2); }
-	private static double Div() { return (n1 / n2); }
+	private static double Div()
+	{
+		if (n2 == 0)
+			throw (new System.Exception("Division by zero is forbiden."));
+		return (n1 / n2);
+	}
 	private static double Mult() { return (n1 * n2); }
-
 	private delegate double Operation();
 	private static void ShowResult(string message, Operation op)
 	{
-		SetColour();
-		Console.Write($"{message} ");
-		Console.ResetColor();
-		Console.WriteLine($"{op():F2}");
+		try
+		{
+			SetColour();
+			Console.Write($"{message}: ");
+			Console.ResetColor();
+			Console.WriteLine($"{op():F2}");
+		}
+		catch (System.Exception e)
+		{
+			Console.WriteLine(e.Message);
+		}
 	}
+	#endregion
+
+	#region Public functions
+	public static void GetInput()
+	{
+		n1 = ReadNumber("Enter the first number");
+		n2 = ReadNumber("Enter the second number");
+	}
+
 	public static void Calculate()
 	{
 		Console.WriteLine(new string('-', 40));
@@ -47,18 +68,12 @@ static class Calculator
 		ShowResult("Sum", Sum);
 		ShowResult("Sub", Sub);
 		ShowResult("Mult", Mult);
-		if (n2 == 0)
-		{
-			SetColour();
-			Console.Write("Div: ");
-			Console.ResetColor();
-			Console.WriteLine("Division by zero is forbiden.");
-		} else
-			ShowResult("Div", Div);
+		ShowResult("Div", Div);
 	}
+	#endregion
 }
 
-class MyCalculator
+class Program
 {
 	static void Main()
 	{
