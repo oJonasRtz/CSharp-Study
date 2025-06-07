@@ -1,0 +1,15 @@
+/home/jonas/CSharp-Study/calculator/bin/Debug/net8.0/calculator
+/home/jonas/CSharp-Study/calculator/bin/Debug/net8.0/calculator.deps.json
+/home/jonas/CSharp-Study/calculator/bin/Debug/net8.0/calculator.runtimeconfig.json
+/home/jonas/CSharp-Study/calculator/bin/Debug/net8.0/calculator.dll
+/home/jonas/CSharp-Study/calculator/bin/Debug/net8.0/calculator.pdb
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.GeneratedMSBuildEditorConfig.editorconfig
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.AssemblyInfoInputs.cache
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.AssemblyInfo.cs
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.csproj.CoreCompileInputs.cache
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.sourcelink.json
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.dll
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/refint/calculator.dll
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.pdb
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/calculator.genruntimeconfig.cache
+/home/jonas/CSharp-Study/calculator/obj/Debug/net8.0/ref/calculator.dll

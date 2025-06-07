@@ -33,3 +33,16 @@
 		using MyLib
 
 ```
+
+<h3>C# Coments</h3>
+
+`Console.WriteLine($"{Sub()}:F2");`
+{"F2" Indicate the number of decimal places to be seen}
+{It can be used like "F1"-1 place | "F3"-3 places}
+
+`Static classes`
+{Classes that cant be instanciated}
+
+`Public classes`
+{If I declare `public class Hi` its accessable in any other Projects}
+{If I declare `class Hi` its only accessable in the project it was created}
