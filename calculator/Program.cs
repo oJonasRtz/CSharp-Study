@@ -2,8 +2,8 @@
 
 static class Calculator
 {
-	private static int n1;
-	private static int n2;
+	private static double n1;
+	private static double n2;
 	
 	private static void	SetColour() {Console.ForegroundColor = ConsoleColor.Yellow;}
 	public static void GetInput()
@@ -16,7 +16,7 @@ static class Calculator
 			Console.Write("Enter first number: ");
 			Console.ResetColor();
 			input = Console.ReadLine();
-		} while (string.IsNullOrEmpty(input) || !int.TryParse(input, out n1));
+		} while (string.IsNullOrEmpty(input) || !double.TryParse(input, out n1));
 
 		do
 		{
@@ -24,7 +24,7 @@ static class Calculator
 			Console.Write("Enter second number: ");
 			Console.ResetColor();
 			input = Console.ReadLine();
-		} while (string.IsNullOrEmpty(input) || !int.TryParse(input, out n2));
+		} while (string.IsNullOrEmpty(input) || !double.TryParse(input, out n2));
 	}
 
 	private static double Sum() { return (n1 + n2); }
@@ -39,12 +39,12 @@ static class Calculator
 		SetColour();
 		Console.Write("Sum: ");
 		Console.ResetColor();
-		Console.WriteLine($"{Sum()}:F2");
+		Console.WriteLine($"{Sum():F2}");
 
 		SetColour();
 		Console.Write("Sub: ");
 		Console.ResetColor();
-		Console.WriteLine($"{Sub()}:F2");
+		Console.WriteLine($"{Sub():F2}");
 
 		SetColour();
 		Console.Write("Div: ");
@@ -52,16 +52,16 @@ static class Calculator
 		if (n2 == 0)
 			Console.WriteLine("Division by zero is forbiden.");
 		else
-			Console.WriteLine($"{Div()}:F2");
+			Console.WriteLine($"{Div():F2}");
 
 		SetColour();
 		Console.Write("Mult: ");
 		Console.ResetColor();
-		Console.WriteLine($"{Mult()}:F2");
+		Console.WriteLine($"{Mult():F2}");
 	}
 }
 
-class Program
+class MyCalculator
 {
 	static void Main()
 	{

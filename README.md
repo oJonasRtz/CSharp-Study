@@ -38,7 +38,7 @@
 
 ---
 
-`Console.WriteLine($"{Sub()}:F2");` 
+`Console.WriteLine($"{Sub():F2}");` 
 - "F2" Indicate the number of decimal places to be seen  
 - It can be used like "F1"-1 place | "F3"-3 places
 
