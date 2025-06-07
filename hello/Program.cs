@@ -2,18 +2,12 @@
 
 class Hello
 {
-	static void DrawText(string text, string? text2 = null)
+	static int Main(string[] argv)
 	{
-		if (!string.IsNullOrEmpty(text2))
-			Console.WriteLine($"My first text: {text}\nMy second text: {text2}");
+		if (argv.Length != 1)
+			Console.WriteLine("Hello world");
 		else
-			Console.WriteLine($"I got only: {text}");
-	}
-	static void Main()
-	{
-		DrawText("Hello world", "I'm learning c#");
-		DrawText("Say hi", null);
+			Console.WriteLine($"Hello {argv[0]}");
+		return (0);
 	}
 }
-
-

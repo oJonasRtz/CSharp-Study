@@ -12,3 +12,4 @@
 /home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.pdb
 /home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.genruntimeconfig.cache
 /home/jonas/CSharp-Study/hello/obj/Debug/net8.0/ref/hello.dll
+/home/jonas/CSharp-Study/hello/obj/Debug/net8.0/hello.sourcelink.json
