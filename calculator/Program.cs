@@ -32,32 +32,29 @@ static class Calculator
 	private static double Div() { return (n1 / n2); }
 	private static double Mult() { return (n1 * n2); }
 
+	private delegate double Operation();
+	private static void ShowResult(string message, Operation op)
+	{
+		SetColour();
+		Console.Write($"{message} ");
+		Console.ResetColor();
+		Console.WriteLine($"{op():F2}");
+	}
 	public static void Calculate()
 	{
 		Console.WriteLine(new string('-', 40));
 
-		SetColour();
-		Console.Write("Sum: ");
-		Console.ResetColor();
-		Console.WriteLine($"{Sum():F2}");
-
-		SetColour();
-		Console.Write("Sub: ");
-		Console.ResetColor();
-		Console.WriteLine($"{Sub():F2}");
-
-		SetColour();
-		Console.Write("Div: ");
-		Console.ResetColor();
+		ShowResult("Sum", Sum);
+		ShowResult("Sub", Sub);
+		ShowResult("Mult", Mult);
 		if (n2 == 0)
+		{
+			SetColour();
+			Console.Write("Div: ");
+			Console.ResetColor();
 			Console.WriteLine("Division by zero is forbiden.");
-		else
-			Console.WriteLine($"{Div():F2}");
-
-		SetColour();
-		Console.Write("Mult: ");
-		Console.ResetColor();
-		Console.WriteLine($"{Mult():F2}");
+		} else
+			ShowResult("Div", Div);
 	}
 }
 
