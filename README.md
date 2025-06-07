@@ -21,7 +21,7 @@
 
 `dotnet add reference MyClassLib/MyClassLib.csproj`
 {Link my project to a classlib}
-{
+```
 	// It works like .h/.hpp files so include lib with "using"
 
 	dotnet new classlib -n MyLib
@@ -29,4 +29,5 @@
 
 	in my project folder
 		using MyLib
-}
+
+```
