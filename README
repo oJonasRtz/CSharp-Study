@@ -1,4 +1,7 @@
-Some dotnet commands
+# Some dotnet commands
+
+	-n Set name
+		{dotnet <command> -n Name}
 
 	-dotnet new console -n ProjectName
 		{Create a new project}
@@ -6,7 +9,7 @@ Some dotnet commands
 	-dotnet run
 		{Run the project-with no params}
 
-	-dotnet run -- args..
+	-dotnet run -- args...
 		{Run with args}
 
 	-dotnet new classlib
@@ -14,4 +17,16 @@ Some dotnet commands
 
 	-dotnet build
 		{compile the project}
-		{destiny: ~/Project/bin/Debug/netX.X/Project}
+		{Output goes to ~/Project/bin/Debug/netX.X/Project}
+
+	-dotnet add reference MyClassLib/MyClassLib.csproj
+		{Link my project to a classlib}
+		{
+			// It works like .h/.hpp files so include lib with "using"
+
+			dotnet new classlib -n MyLib
+			dotnet new console -n MyProject
+
+			in my project folder
+				using MyLib
+		}
