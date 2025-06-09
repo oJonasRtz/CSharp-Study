@@ -28,7 +28,8 @@
 
 	dotnet new classlib -n MyLib
 	dotnet new console -n MyProject
-	dotnet add reference MyLib/MyLib.csproj
+	cd MyProject
+	dotnet add reference ../MyLib/MyLib.csproj
 
 	//in my project file (.cs)
 		using MyLib
