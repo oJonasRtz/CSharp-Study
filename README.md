@@ -58,5 +58,5 @@
 
 `ref`
 - Works similarly to `out`
-- I'm not required to assign a value to the variable
+- I'm not required to assign a value to the variable in the function
 - It must be initialized before being used as a param
