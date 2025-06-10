@@ -55,8 +55,13 @@
 - When calling `out` I'm required to assign a value to the variable in the function
 - Use: `Function(out myVar);` or `void Function(out int number){}`
 - It doesn't need to be initialized before being used as a param
+- Only Write before assign a value to the variable
 
 `ref`
 - Works similarly to `out`
 - I'm not required to assign a value to the variable in the function
 - It must be initialized before being used as a param
+
+`in`
+- Works like `ref` and `out`
+- It indicates that its a only read variable

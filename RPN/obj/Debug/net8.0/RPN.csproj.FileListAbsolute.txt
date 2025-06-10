@@ -1,0 +1,15 @@
+/home/jonas/CSharp-Study/RPN/bin/Debug/net8.0/RPN
+/home/jonas/CSharp-Study/RPN/bin/Debug/net8.0/RPN.deps.json
+/home/jonas/CSharp-Study/RPN/bin/Debug/net8.0/RPN.runtimeconfig.json
+/home/jonas/CSharp-Study/RPN/bin/Debug/net8.0/RPN.dll
+/home/jonas/CSharp-Study/RPN/bin/Debug/net8.0/RPN.pdb
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.GeneratedMSBuildEditorConfig.editorconfig
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.AssemblyInfoInputs.cache
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.AssemblyInfo.cs
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.csproj.CoreCompileInputs.cache
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.sourcelink.json
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.dll
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/refint/RPN.dll
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.pdb
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/RPN.genruntimeconfig.cache
+/home/jonas/CSharp-Study/RPN/obj/Debug/net8.0/ref/RPN.dll
